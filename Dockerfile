@@ -1,5 +1,9 @@
 FROM php:8.4-fpm-alpine
 
+# Install dev tools
+RUN apk add --no-cache \
+    git 
+
 # Install production dependencies
 RUN apk add --no-cache \
     libpng \
