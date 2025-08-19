@@ -1,0 +1,26 @@
+{
+  "name": "easy-rsvp-dev",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "easy-rsvp",
+  "workspaceFolder": "/var/www/html",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "cweijan.vscode-mysql-client2",
+        "ahmadalli.vscode-nginx-conf",
+        "devsense.composer-php-vscode",
+        "esbenp.prettier-vscode",
+        "github.copilot",
+        "github.copilot-chat",
+        "ms-azuretools.vscode-containers",
+        "xdebug.php-debug"
+      ]
+    }
+  },
+  "portsAttributes": {
+    "9003": {
+      "label": "Xdebug"
+    }
+  }
+}

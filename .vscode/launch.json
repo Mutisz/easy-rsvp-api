@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Listen",
+      "type": "php",
+      "request": "launch"
+    },
+    {
+      "name": "Run",
+      "type": "php",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${fileDirname}",
+      "stopOnEntry": true,
+      "env": {
+        "XDEBUG_TRIGGER": "1"
+      }
+    }
+  ]
+}
